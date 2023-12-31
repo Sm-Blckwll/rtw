@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: 'Rubik', sans-serif !important;
@@ -110,7 +113,8 @@ body {
     flex-direction: column;
     flex-wrap: nowrap;
     gap: 0px;
-    height: 100%;
+    min-height: 100%;
+    height: 100vh;
     justify-content: flex-start;
     overflow: visible;
     padding: 0;
@@ -151,10 +155,15 @@ body {
     margin: 10px 0px;
 }
 
-.nav-link-text:hover {
+.nav-link-text a:hover {
     color: rgb(0, 0, 0);
     text-decoration: underline;
     cursor: pointer;
+}
+
+.nav-link-text a {
+    color: rgb(102, 102, 103);
+    text-decoration: none;
 }
 
 .search-main {
@@ -169,6 +178,10 @@ body {
     position: relative;
     height: 69px;
     border-bottom: solid 1px rgb(238, 238, 238);
+}
+
+.content {
+    display: none;
 }
 
 .content-block {
@@ -193,6 +206,16 @@ body {
     line-height: 28px;
     margin: 0px;
 
+}
+
+.content-text li {
+    margin-bottom: 10px;
+}
+
+.content-link {
+    margin-top: 50px;
+    color: rgb(102, 102, 103);
+    font-style: italic;
 }
 
 @media (max-width: 768px) {
