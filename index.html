@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Rewilding Docs</title>
+</head>
+
+<body>
+    <div class="main">
+        <button class="hamburger">&#9776;</button>
+        <div class="left">
+            <!-- Your existing left side content goes here -->
+
+
+
+            <div class="nav-main">
+                <header class="top">
+                    <h1>Nature Docs</h1>
+                </header>
+                <div class="nav-block">
+                    <div class="nav-title">
+                        <p class="nav-title-text">Guides</p>
+                    </div>
+                    <div class="nav-link-group">
+                        <div class="nav-link">
+                            <p class="nav-link-text">Getting Started</p>
+                        </div>
+                        <div class="nav-link">
+                            <p class="nav-link-text">What is Rewilding?</p>
+                        </div>
+                        <div class="nav-link">
+                            <p class="nav-link-text">Pruning Orchards</p>
+                        </div>
+                        <div class="nav-link">
+                            <p class="nav-link-text">Wildflower meadows</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nav-block">
+                    <div class="nav-title">
+                        <p class="nav-title-text">Reference</p>
+                    </div>
+                    <div class="nav-link-group">
+                        <div class="nav-link">
+                            <p class="nav-link-text">Rewilding network</p>
+                        </div>
+                        <div class="nav-link">
+                            <p class="nav-link-text">Farmer Library</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="search-main">🔍 Search . . .</div>
+            <div class="content-block">
+                <div class="content-title">
+                    <h2>Getting Started</h2>
+                </div>
+                <div class="content-text">
+                    <p>Learn the basics of Rewilding and how to create own little bit of nature.</p>
+                </div>
+                <div class="content-link">
+                    <p>Read the guide</p>
+                </div>
+            </div>
+        </div>
+
+        </section>
+        <footer>
+
+        </footer>
+</body>
+<script>
+    document.querySelector('.hamburger').addEventListener('click', function () {
+        this.classList.toggle('open');
+        document.querySelector('.left').classList.toggle('active');
+    });
+</script>
+
+</html>
